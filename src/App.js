@@ -5,6 +5,9 @@ import UseState from './views/useState'
 import UseReducer from './views/useReducer'
 import ParentContext from './views/useContext'
 import UseEffect from './views/useEffect'
+import UseMemo from './views/useMemo'
+import Memo from './views/memo'
+import UseCallback from './views/useCallback'
 
 class App extends Component {
   render() {
@@ -17,6 +20,9 @@ class App extends Component {
             <Link to="/useReducer">useReducer</Link>
             <Link to="/useContext">useContext</Link>
             <Link to="/useEffect">useEffect</Link>
+            <Link to="/useMemo">useMemo</Link>
+            <Link to="/memo">memo</Link>
+            <Link to="/useCallback">useCallback</Link>
           </nav>
           <Switch>
             <Route path="/useState">
@@ -30,6 +36,15 @@ class App extends Component {
             </Route>
             <Route path="/useEffect">
               <UseEffect />
+            </Route>
+            <Route path="/useMemo">
+              <UseMemo />
+            </Route>
+            <Route path="/memo">
+              <Memo />
+            </Route>
+            <Route path="/useCallback">
+              <UseCallback />
             </Route>
           </Switch>
         </div>
