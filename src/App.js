@@ -8,6 +8,9 @@ import UseEffect from './views/useEffect'
 import UseMemo from './views/useMemo'
 import Memo from './views/memo'
 import UseCallback from './views/useCallback'
+import UseRef from './views/useRef'
+import CustomHook from './views/customHook'
+import RouterHook from './views/routerHook'
 
 class App extends Component {
   render() {
@@ -23,6 +26,9 @@ class App extends Component {
             <Link to="/useMemo">useMemo</Link>
             <Link to="/memo">memo</Link>
             <Link to="/useCallback">useCallback</Link>
+            <Link to="/useRef">useRef</Link>
+            <Link to="/customHook">customHook</Link>
+            <Link to="/routerHook">routerHook</Link>
           </nav>
           <Switch>
             <Route path="/useState">
@@ -45,6 +51,15 @@ class App extends Component {
             </Route>
             <Route path="/useCallback">
               <UseCallback />
+            </Route>
+            <Route path="/useRef">
+              <UseRef />
+            </Route>
+            <Route path="/customHook">
+              <CustomHook />
+            </Route>
+            <Route path="/routerHook/:name/:age">
+              <RouterHook />
             </Route>
           </Switch>
         </div>
